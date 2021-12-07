@@ -1,0 +1,36 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "show-list-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/showList/ShowListWebPart.js",
+          "manifest": "./src/webparts/showList/ShowListWebPart.manifest.json"
+        }
+      ]
+    },
+    "crud-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/crud/CrudWebPart.js",
+          "manifest": "./src/webparts/crud/CrudWebPart.manifest.json"
+        }
+      ]
+    },
+    "crud-pnp-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/crudPnp/CrudPnpWebPart.js",
+          "manifest": "./src/webparts/crudPnp/CrudPnpWebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "ShowListWebPartStrings": "lib/webparts/showList/loc/{locale}.js",
+    "CrudWebPartStrings": "lib/webparts/crud/loc/{locale}.js",
+    "CrudPnpWebPartStrings": "lib/webparts/crudPnp/loc/{locale}.js"
+  }
+}
